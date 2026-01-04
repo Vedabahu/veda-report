@@ -1,28 +1,33 @@
-//#import "@preview/kunskap:0.1.0": *
+//#import "@local/veda-report:0.0.1": *
 #import "../lib.typ": *
 
-#show: kunskap.with(
-    title: [Instructions for writing reports],
-    author: "Anonymous Beaver",
-    header: "Learning Typst",
-    date: datetime.today().display("[month repr:long] [day padding:zero], [year repr:full]"),
+#show: veda-report.with(
+  title: [Instructions for writing reports],
+  author: "Anonymous Beaver",
+  header: "Learning Typst",
+  date: datetime.today().display("[month repr:long] [day padding:zero], [year repr:full]"),
 
-    // Paper size, fonts, and colors can optionally be customized as well
+  // Paper size, fonts, and colors can optionally be customized as well
 
-    // Paper size
-    //paper-size: "a4",
+  // Paper size
+  //paper-size: "a4",
 
-    // Fonts
-    //body-font: ("Noto Serif"),
-    //body-font-size: 10pt,
-    //raw-font: ("Hack Nerd Font", "Hack NF", "Hack", "Source Code Pro"),
-    //raw-font-size: 9pt,
-    //headings-font: ("Source Sans Pro", "Source Sans 3"),
+  // Fonts
+  //body-font: ("Noto Serif"),
+  //body-font-size: 11pt,
+  //raw-font: "Hack",
+  //raw-font-size: 9pt,
+  //headings-font: "Source Sans Pro",
 
-    // Colors
-    //link-color: link-color,
-    //muted-color: muted-color,
-    //block-bg-color: block-bg-color,
+  // TOC
+  // enable-toc: true,
+  // toc-properties: (),
+
+
+  // Colors
+  //link-color: link-color,
+  //muted-color: muted-color,
+  //block-bg-color: block-bg-color,
 )
 
 #lorem(21)

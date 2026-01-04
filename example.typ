@@ -1,10 +1,11 @@
 #import "lib.typ": *
 
-#show: kunskap.with(
-    title: "Kunskap: a report template",
-    author: "Marcel Bollmann",
-    date: "October 27, 2024",
-    header: "Typst templates",
+#show: veda-report.with(
+  title: "Veda-Report: a report template, initially forked from kunskap",
+  author: "Vedabahu",
+  date: "October 27, 2024",
+  header: "Typst templates",
+  enable-toc: true,
 )
 
 This template is mainly intended for academic documents such as reports,
@@ -16,15 +17,15 @@ _knowledge_ in Swedish.
 The default fonts are _Noto Serif_ for the body and _Source Sans_ for the
 headings.  The default monospace font is _Hack_ or _Source Code Pro_.  Links
 will be #link("https://www.color-name.com/hex/3282b8")[highlighted in a
-steel-blue-ish hue].
+  steel-blue-ish hue].
 
 1. Lists are indented.
-    1. Numbered lists uses numbers (first level) and letters (second level).
-        1. ...and Roman numerals for the third level.
+  1. Numbered lists uses numbers (first level) and letters (second level).
+    1. ...and Roman numerals for the third level.
 
 - #lorem(5)
+  - #lorem(5)
     - #lorem(5)
-        - #lorem(5)
 
 / Term lists: These are also indented.  #lorem(30)
 
@@ -71,15 +72,19 @@ the header altogether:
 == Missing features
 
 / #emoji.crossmark Bibliography: Styling related to bibliographies is currently missing.
-/ #emoji.crossmark Outline: Styling for outlines (e.g. table of contents) is currently missing.
+/ #emoji.crossmark Outline: Styling for outlines (e.g. table of contents) is currently missing. Nothing much is done. Some implementations is present.
 / #emoji.crossmark Tables: Global styling for tables is currently missing.
 
 
 = Credits
 
-This template started out by emulating the layout of course documents in
-#link("https://liu.se/en/employee/marku61")[Marco Kuhlmann]'s courses at
-Linköping University.  On the technical side, this template took a lot of
-inspiration from #link("https://github.com/talal/ilm/blob/main/lib.typ")[the
-`ilm` template], even if the design decisions may be radically different.
+This is a fork of https://github.com/mbollmann/typst-kunskap. I have now updated some things and am using for personal purposes. It has a very beautiful design.
+
+By the previous owner:
+
+#quote(block: true, quotes: true)[This template started out by emulating the layout of course documents in
+  #link("https://liu.se/en/employee/marku61")[Marco Kuhlmann]'s courses at
+  Linköping University.  On the technical side, this template took a lot of
+  inspiration from #link("https://github.com/talal/ilm/blob/main/lib.typ")[the
+    `ilm` template], even if the design decisions may be radically different.]
 
