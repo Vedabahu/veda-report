@@ -1,10 +1,10 @@
 [package]
-name = "kunskap"
-version = "0.1.0"
-compiler = "0.12.0"
+name = "veda-report"
+version = "0.0.1"
+compiler = "0.14.2"
 entrypoint = "lib.typ"
-repository = "https://github.com/mbollmann/typst-kunskap"
-authors = ["Marcel Bollmann <marcel@bollmann.me>"]
+repository = "https://github.com/Vedabahu/veda-report"
+authors = ["Vedabahu <79869936+Vedabahu@users.noreply.github.com>"]
 license = "MIT-0"
 description = "A template with generous spacing for reports, assignments, course documents, and similar (shorter) documents."
 keywords = ["notes", "report", "non-fiction", "class", "lecture"]
