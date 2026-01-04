@@ -1,30 +1,27 @@
-# kunskap
+# Veda-Report
 
-A [Typst](https://typst.app/) template mainly intended for shorter academic
-documents such as reports, assignments, course documents, and so on.  Its name,
-_"kunskap"_, means _knowledge_ in Swedish.
+Modified version of the initial [Kinskap](https://github.com/mbollmann/typst-kunskap) template.
+
+> A [Typst](https://typst.app/) template mainly intended for shorter academic documents such as reports, assignments, course documents, and so on.  Its name, _"kunskap"_, means _knowledge_ in Swedish.
 
 See [this example
-PDF](https://github.com/mbollmann/typst-kunskap/blob/main/example.pdf) for a
+PDF](./example.pdf) for a
 longer demonstration of how it looks.
 
 ## Usage
 
-You can use this template in the Typst web app by clicking "Start from template"
-on the dashboard and searching for `kunskap`.
-
-Alternatively, you can use the CLI to kick this project off using the command
+Use the CLI to kick this project off using the command
 
 ```sh
-typst init @preview/kunskap
+typst init @local/veda-report
 ```
 
 Typst will create a new directory with all the files needed to get you started.
 
 ## Configuration
 
-This template exports the `kunskap` function with several arguments.  You will
-want to set at least the following, describing the metadata of your document:
+This template exports the `veda-report` function with several arguments.  You will
+want to set at least the following, describing the metadata of your document (There are some more things that are not listed here. Explore it later):
 
 | Argument | Description |
 | -------- | ----------- |
@@ -74,6 +71,8 @@ As of now, this template has not yet been particularly optimized for styling rel
 
 
 ## Credits
+
+This is a fork of https://github.com/mbollmann/typst-kunskap. I have now updated some things and am using for personal purposes. It has a very beautiful design.
 
 This template started out by emulating the layout of course documents in [Marco
 Kuhlmann](https://liu.se/en/employee/marku61)'s courses at Linköping University.[^2]
