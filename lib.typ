@@ -10,18 +10,20 @@
   // Metadata
   title: [Title],
   author: "Anonymous",
+  description: "",
+  keywords: (),
   header: "",
   date: datetime.today().display("[month repr:long] [day padding:zero], [year repr:full]"),
   // Paper size
   paper-size: "a4",
   // Fonts
-  body-font: "Noto Serif",
-  body-font-size: 11pt,
+  body-font: "Atkinson Hyperlegible Next",
+  body-font-size: 12pt,
   raw-font: "Hack",
   raw-font-size: 9pt,
-  headings-font: "Source Sans Pro",
+  headings-font: "Atkinson Hyperlegible Next",
   // TOC
-  enable-toc: true,
+  enable-toc: false,
   toc-properties: (),
   // Colors
   link-color: link-color,
@@ -37,41 +39,50 @@
   )
 
   // Set the document's metadata
-  set document(title: title, author: author)
+  set document(
+      title: title,
+      author: author,
+      description: description,
+      keywords: keywords,
+    )
 
   // Set the fonts
   set text(font: body-font, size: body-font-size)
   show raw: set text(font: raw-font, size: raw-font-size)
 
-  show heading: set text(font: headings-font, weight: "medium")
+  show heading: set text(font: headings-font)
   show heading.where(level: 1): set block(above: 6%, below: 3%)
   show heading.where(level: 2): set block(above: 4%, below: 3%)
   show heading.where(level: 3): set block(above: 3%, below: 2%)
   show heading.where(level: 4): set block(above: 3%, below: 2%)
   show heading.where(level: 5): set block(above: 3%, below: 2%)
 
-  //   show heading: it => {
-  //     // Add vertical space before headings
-  //     if it.level == 1 {
-  //       v(6%, weak: true)
-  //     } else {
-  //       v(4%, weak: true)
-  //     }
+//     show heading: it => {
+//       // Add vertical space before headings
+//       if it.level == 1 {
+//         v(6%, weak: true)
+//       } else {
+//         v(4%, weak: true)
+//       }
+//
+//       // Set headings font
+//       set text(font: headings-font, weight: "medium")
+//       it
+//
+//       // Add vertical space after headings
+//       v(3%, weak: true)
+//     }
 
-  //     // Set headings font
-  //     set text(font: headings-font, weight: "medium")
-  //     it
-
-  //     // Add vertical space after headings
-  //     v(3%, weak: true)
-  //   }
-
-  //   show heading.where(level: 3): it => text(
-  //     font: headings-font,
-  //     //size: body-font-size,
-  //     weight: "medium",
-  //     it.body + h(1em),
-  //   )
+//     show heading: it => {
+//       if it.level >= 3 {
+//         text(
+//           font: headings-font,
+//           size: body-font-size,
+//           weight: "medium",
+//           it.body + h(1em),
+//         )
+//       }
+//     }
 
   // Set paragraph properties
   set par(leading: 0.95em, spacing: 1.7em, justify: true)
@@ -140,7 +151,7 @@
   // Set title block
   {
     v(26pt)
-    text(font: headings-font, weight: "medium", size: 22pt, title)
+    text(font: headings-font, weight: "bold", size: 22pt, title)
     linebreak()
     v(16pt)
     if type(author) == array {
