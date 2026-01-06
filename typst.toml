@@ -1,6 +1,6 @@
 [package]
 name = "veda-report"
-version = "0.0.1"
+version = "0.1.1"
 compiler = "0.14.2"
 entrypoint = "lib.typ"
 repository = "https://github.com/Vedabahu/veda-report"
